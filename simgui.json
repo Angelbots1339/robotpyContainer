@@ -6,7 +6,7 @@
     },
     "windows": {
       "/SmartDashboard/Field": {
-        "image": "/Users/crittert/Library/CloudStorage/Dropbox/11_Angelbotics/2023/FieldImage.png",
+        "image": "./FieldImage.png",
         "width": 16.5,
         "window": {
           "visible": true
