@@ -1,0 +1,50 @@
+{
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo",
+      "/SmartDashboard/Field": "Field2d"
+    },
+    "windows": {
+      "/SmartDashboard/Field": {
+        "image": "/Users/crittert/Library/CloudStorage/Dropbox/11_Angelbotics/2023/FieldImage.png",
+        "width": 16.5,
+        "window": {
+          "visible": true
+        }
+      }
+    }
+  },
+  "NetworkTables": {
+    "Persistent Values": {
+      "open": false
+    },
+    "transitory": {
+      "FMSInfo": {
+        "open": true
+      },
+      "LiveWindow": {
+        "open": true
+      },
+      "SmartDashboard": {
+        "Field": {
+          "open": true
+        },
+        "open": true
+      }
+    }
+  },
+  "Plot": {
+    "Plot <0>": {
+      "plots": [
+        {
+          "axis": [
+            {
+              "autoFit": true
+            }
+          ],
+          "height": 140
+        }
+      ]
+    }
+  }
+}
