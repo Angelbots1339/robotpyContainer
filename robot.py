@@ -13,11 +13,19 @@ class MyRobot(wpilib.TimedRobot):
         This function is called upon program startup and
         should be used for any initialization code.
         """
-        self.left_motor = wpilib.Spark(0)
-        self.right_motor = wpilib.Spark(1)
-        self.drive = wpilib.drive.DifferentialDrive(self.left_motor, self.right_motor)
+        self.front_left = wpilib.Spark(0)
+        self.back_left = wpilib.Spark(1)
+
+        self.front_right = wpilib.Spark(2)
+        self.back_right = wpilib.Spark(3)
+        self.left_motors = wpilib.MotorControllerGroup(self.front_left, self.back_left)
+        self.right_motors = wpilib.MotorControllerGroup(self.front_right, self.back_right)
+        self.left_motors.setInverted(True)
+        self.drive = wpilib.drive.DifferentialDrive(self.left_motors, self.right_motors) 
         self.stick = wpilib.Joystick(0)
         self.timer = wpilib.Timer()
+
+        
 
     def autonomousInit(self):
         """This function is run once each time the robot enters autonomous mode."""
@@ -35,7 +43,7 @@ class MyRobot(wpilib.TimedRobot):
 
     def teleopPeriodic(self):
         """This function is called periodically during operator control."""
-        self.drive.arcadeDrive(self.stick.getY(), self.stick.getX())
+        self.drive.arcadeDrive(self.stick.getX(), self.stick.getY())
 
 
 if __name__ == "__main__":
