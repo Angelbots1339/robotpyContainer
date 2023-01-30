@@ -29,7 +29,7 @@ class PhysicsEngine:
 
         # Motors
         self.l_motor = wpilib.simulation.PWMSim(0)
-        self.r_motor = wpilib.simulation.PWMSim(1)
+        self.r_motor = wpilib.simulation.PWMSim(2)
 
         self.dio1 = wpilib.simulation.DIOSim(1)
         self.dio2 = wpilib.simulation.DIOSim(2)
@@ -48,13 +48,13 @@ class PhysicsEngine:
         # fmt: off
         self.drivetrain = tankmodel.TankModel.theory(
             motor_cfgs.MOTOR_CFG_CIM,           # motor configuration
-            110 * units.lbs,                    # robot mass
+            116 * units.lbs,                    # robot mass
             10.71,                              # drivetrain gear ratio
             2,                                  # motors per side
-            22 * units.inch,                    # robot wheelbase
-            23 * units.inch + bumper_width * 2, # robot width
-            32 * units.inch + bumper_width * 2, # robot length
-            6 * units.inch,                     # wheel diameter
+            5 * units.inch,                    # robot wheelbase
+            16 * units.inch + bumper_width * 2, # robot width
+            17 * units.inch + bumper_width * 2, # robot length
+            5 * units.inch,                     # wheel diameter
         )
         # fmt: on
 
@@ -71,6 +71,8 @@ class PhysicsEngine:
         # Simulate the drivetrain
         l_motor = self.l_motor.getSpeed()
         r_motor = self.r_motor.getSpeed()
+
+        
 
         transform = self.drivetrain.calculate(l_motor, r_motor, tm_diff)
         pose = self.physics_controller.move_robot(transform)
