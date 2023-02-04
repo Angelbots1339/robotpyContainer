@@ -1,11 +1,11 @@
 {
   "MainWindow": {
     "GLOBAL": {
-      "height": "759",
+      "height": "839",
       "maximized": "1",
       "style": "0",
       "userScale": "2",
-      "width": "1440",
+      "width": "1512",
       "xpos": "59",
       "ypos": "108"
     }
@@ -21,17 +21,17 @@
   "Window": {
     "###/SmartDashboard/Field": {
       "Collapsed": "0",
-      "Pos": "142,23",
+      "Pos": "201,18",
       "Size": "968,585"
     },
     "###FMS": {
       "Collapsed": "0",
-      "Pos": "5,540",
+      "Pos": "1143,682",
       "Size": "283,146"
     },
     "###Joysticks": {
       "Collapsed": "0",
-      "Pos": "214,595",
+      "Pos": "1,606",
       "Size": "796,155"
     },
     "###Keyboard 0 Settings": {
@@ -41,7 +41,7 @@
     },
     "###NetworkTables": {
       "Collapsed": "0",
-      "Pos": "826,181",
+      "Pos": "990,96",
       "Size": "486,398"
     },
     "###NetworkTables Info": {
@@ -61,7 +61,7 @@
     },
     "###System Joysticks": {
       "Collapsed": "0",
-      "Pos": "3,309",
+      "Pos": "2,384",
       "Size": "192,218"
     },
     "###Timing": {
@@ -76,7 +76,7 @@
     },
     "Robot State": {
       "Collapsed": "0",
-      "Pos": "5,20",
+      "Pos": "3,21",
       "Size": "92,99"
     }
   }
