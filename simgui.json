@@ -4,6 +4,11 @@
       "window": {
         "visible": false
       }
+    },
+    "Timing": {
+      "window": {
+        "visible": false
+      }
     }
   },
   "NTProvider": {
@@ -57,6 +62,9 @@
       }
     }
   },
+  "NetworkTables View": {
+    "visible": false
+  },
   "Plot": {
     "Plot <0>": {
       "plots": [
@@ -68,7 +76,10 @@
           ],
           "height": 140
         }
-      ]
+      ],
+      "window": {
+        "visible": false
+      }
     }
   }
 }
