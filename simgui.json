@@ -36,6 +36,8 @@
             0.25,
             255.0
           ],
+          "image": "./Mario.png",
+          "length": 0.8199999928474426,
           "width": 0.8199999928474426
         },
         "image": "./FieldImage.png",
